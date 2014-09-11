@@ -1,4 +1,6 @@
-# Orw
+# Orware
+
+A theme for Ghost blog.
 
 ## Copyright & License
 
