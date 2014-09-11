@@ -2,6 +2,16 @@
 
 A theme for Ghost blog.
 
+## Development
+
+```bash
+bourbon install --path assets/scss
+```
+
+```bash
+sass --watch assets/scss:assets/css
+```
+
 ## Copyright & License
 
 Copyright (c) 2013-2014 Ghost Foundation - Released under the MIT License.
