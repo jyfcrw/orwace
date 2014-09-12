@@ -8,16 +8,11 @@
     {{! Page Meta }}
     <title>{{meta_title}}</title>
     <meta name="description" content="{{meta_description}}" />
-
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
-
-    {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/orware.css"}}" />
-    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
-
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
@@ -35,7 +30,6 @@
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}
 
-    {{! The main JavaScript file for Casper }}
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
