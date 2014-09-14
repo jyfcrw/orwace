@@ -4,9 +4,9 @@
 // Font Awesome 4.2.0
 //----------------------------
 @import 'font-awesome/font-awesome';
-@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic|Open+Sans:700,400);
-@import url(http://fonts.googleapis.com/css?family=Bad+Script);
-@import url(http://fonts.googleapis.com/css?family=Damion);
+@include font-face(Damion, '../fonts/Damion-Regular');
+@include font-face('Bad Script', '../fonts/BadScript-Regular');
+
 
 @import 'variables.scss';
 

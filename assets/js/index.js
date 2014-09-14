@@ -8,6 +8,21 @@
         $("#talk").click(function() {
             alert("TALK");
         });
+
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 180) {
+                $('.top-toggle-menu').fadeOut(200);
+            } else {
+                $('.top-toggle-menu').fadeIn(200);
+            }
+        });
+
+        $(".menu-toggle").click(function() {
+          $(this).toggleClass("open");
+          $(".top-menu").fadeToggle();
+        });
+
+
         // $(".post-content").fitVids();
         // function casperFullImg() {
         //     $("img").each( function() {

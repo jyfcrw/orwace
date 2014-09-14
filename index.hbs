@@ -3,9 +3,20 @@
 
 {{! The big featured header }}
 <header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
-    <nav class="main-nav overlay clearfix">
-        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
-    </nav>
+    <div class="top-toggle-menu">
+        <div class="menu-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+        <div class="top-menu">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Post</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
     <div class="main-feature vertical">
         <h1 class="page-title">{{@blog.title}}</h1>
         <h2 class="page-description">{{@blog.description}}</h2>

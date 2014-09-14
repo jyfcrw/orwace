@@ -84,6 +84,81 @@
     }
 }
 
+.top-toggle-menu {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 99;
+}
+
+.menu-toggle {
+    width: 30px;
+    height: 30px;
+    margin: 30px 10px 30px 30px;
+    float: left;
+    z-index: 10;
+    overflow: hidden;
+    cursor: pointer;
+
+    &.open {
+        .one {
+            @include transform(rotate(45deg) translate(5px, 5px));
+        }
+        .two {
+            opacity: 0;
+        }
+        .three {
+            @include transform(rotate(-45deg) translate(7px, -8px));
+        }
+    }
+
+    div {
+        width: 80%;
+        height: 1px;
+        background: white;
+        margin: 8px auto;
+        @include backface-visibility(hidden);
+        @include transition (all 0.3s);
+
+        &.two {
+            width: 60%;
+        }
+    }
+}
+
+.top-menu {
+    color: #fff;
+    margin: 20px 0 0 70px;
+    z-index: 10;
+    display: none;
+    ul {
+        margin: -1px auto;
+        padding: 0;
+        li {
+            float: left;
+            list-style-type: none;
+            margin: 0 auto;
+            padding: 5px 18px;
+            background: rgba(255,255,255, .1);
+            text-transform: uppercase;
+            font-size: 1.5rem;
+
+            &:hover {
+                background: rgba(255,255,255, .3);
+            }
+
+            a {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}
 
 /* ==========================================================================
    Animations
