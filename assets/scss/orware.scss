@@ -1,14 +1,16 @@
 @import 'bourbon/bourbon';
+@import 'normalize';
+@import 'variables.scss';
+@import 'screen';
+@import 'global';
 
 //----------------------------
 // Font Awesome 4.2.0
 //----------------------------
 @import 'font-awesome/font-awesome';
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300);
 @include font-face(Damion, '../fonts/Damion-Regular');
 @include font-face('Bad Script', '../fonts/BadScript-Regular');
-
-
-@import 'variables.scss';
 
 // ------------------------------
 // COMPONENTS
@@ -22,5 +24,3 @@
 @import 'components/post-list.scss';
 @import 'components/forms.scss';
 
-@import 'screen';
-@import 'global';
